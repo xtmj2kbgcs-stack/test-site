@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Recettes économiques</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .recipe-card {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .recipe-card:hover {
+      transform: scale(1.03);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+    }
+
+    .back-button {
+      background: #ddd;
+      padding: 10px 15px;
+      border-radius: 6px;
+      display: inline-block;
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+
+    button {
+      background: #4f46e5;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🍽️ Recettes économiques</h1>
+
+  <div id="app"></div>
+
+  <script>
+    const RECIPES = [
+      {
+        id: "pates-tomate",
+        title: "Pâtes à la tomate",
+        emoji: "🍝",
+        image: "https://via.placeholder.com/300x200?text=Pates+Tomate",
+        ingredients: [
+          { emoji: "🍝", label: "Pâtes", qty: "200g" },
+          { emoji: "🍅", label: "Sauce tomate", qty: "150ml" },
+          { emoji: "🧅", label: "Oignon", qty: "1" },
+        ],
+        steps: ["Cuire les pâtes", "Chauffer la sauce tomate", "Mélanger et servir"],
+      },
+      {
+        id: "omelette",
+        title: "Omelette simple",
+        emoji: "🍳",
+        image: "https://via.placeholder.com/300x200?text=Omelette",
+        ingredients: [
+          { emoji: "🥚", label: "Œufs", qty: "3" },
+          { emoji: "🧂", label: "Sel", qty: "1 pincée" },
+          { emoji: "🫒", label: "Huile", qty: "1 c.à.s" },
+        ],
+        steps: ["Battre les œufs", "Cuire à la poêle", "Replier et servir"],
+      }
+    ];
+
+    const app = document.getElementById("app");
+
+    function speak(text) {
+      const msg = new SpeechSynthesisUtterance(text);
+      msg.lang = "fr-FR";
+      speechSynthesis.speak(msg);
+    }
+
+    function showHome() {
+      app.innerHTML = `
+        <div class="grid">
+          ${RECIPES.map(r => `
+            <div class="recipe-card" onclick="showRecipe('${r.id}')">
+              <img src="${r.image}" style="width: 100%; height: 120px; object-fit: cover">
+              <div style="padding: 10px; font-size: 20px">${r.emoji} ${r.title}</div>
+            </div>
+          `).join("")}
+        </div>
+      `;
+    }
+
+    function showRecipe(id) {
+      const r = RECIPES.find(x => x.id === id);
+      app.innerHTML = `
+        <div class="back-button" onclick="showHome()">🔙 Retour</div>
+
+        <h2>${r.emoji} ${r.title}</h2>
+
+        <img src="${r.image}" style="width: 100%; border-radius: 10px; margin-top: 10px">
+
+        <h3>🛒 Ingrédients</h3>
+        <ul>
+          ${r.ingredients
+            .map(i => `<li style="font-size:20px">${i.emoji} ${i.label} — <strong>${i.qty}</strong></li>`)
+            .join("")}
+        </ul>
+
+        <h3>👣 Étapes</h3>
+        <ol>
+          ${r.steps
+            .map(s => `<li style="font-size:20px; margin-bottom:10px">👉 ${s}</li>`)
+            .join("")}
+        </ol>
+
+        <button onclick="speak('${r.steps.join(". ")}')">🔊 Lire les étapes</button>
+      `;
+    }
+
+    showHome();
+  </script>
+</body>
+</html>
