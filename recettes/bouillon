@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Bouillon antillais économique</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: Arial; padding:20px; }
+    a { text-decoration:none; font-size:18px; }
+  </style>
+</head>
+<body>
+
+<a href="../index.html">⬅ Retour</a>
+
+<h1>🥣 Bouillon antillais économique</h1>
+
+<h2>Ingrédients</h2>
+<ul>
+  <li>1 patate douce</li>
+  <li>2 carottes</li>
+  <li>1 courgette</li>
+  <li>1 oignon</li>
+  <li>100 g de haricots secs cuits</li>
+  <li>Thym, sel, poivre</li>
+</ul>
+
+<h2>Préparation</h2>
+<ul>
+  <li>Couper les légumes.</li>
+  <li>Mettre dans 1,5 L d’eau.</li>
+  <li>Ajouter thym, sel, poivre.</li>
+  <li>Ajouter les légumineuses cuites.</li>
+  <li>Cuire 30 min.</li>
+</ul>
+
+<p><strong>💡 Très bon pour plusieurs repas : économique.</strong></p>
+
+</body>
+</html>
