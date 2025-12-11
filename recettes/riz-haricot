@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Riz collé aux haricots rouges</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: Arial; padding:20px; }
+    a { text-decoration:none; font-size:18px; }
+    h1 { font-size:26px; margin-top:10px; }
+    ul { font-size:18px; }
+  </style>
+</head>
+<body>
+
+<a href="../index.html">⬅ Retour</a>
+
+<h1>🍛 Riz collé aux haricots rouges</h1>
+
+<h2>Ingrédients</h2>
+<ul>
+  <li>250 g de riz</li>
+  <li>150 g de haricots rouges</li>
+  <li>1 oignon</li>
+  <li>1 gousse d’ail</li>
+  <li>Thym, laurier</li>
+  <li>1 c. à soupe d’huile</li>
+  <li>Sel, poivre</li>
+</ul>
+
+<h2>Préparation</h2>
+<ul>
+  <li>Faire tremper les haricots secs une nuit, puis cuire 45–60 min.</li>
+  <li>Faire revenir ail et oignon dans l’huile.</li>
+  <li>Ajouter haricots, thym, laurier, un peu d’eau.</li>
+  <li>Ajouter le riz + 2 volumes d’eau.</li>
+  <li>Cuire à feu doux jusqu’à absorption.</li>
+</ul>
+
+<p><strong>💡 Très nourrissant et économique.</strong></p>
+
+</body>
+</html>
