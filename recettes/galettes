@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Galettes de légumes économiques</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: Arial; padding:20px; }
+    a { text-decoration:none; font-size:18px; }
+  </style>
+</head>
+<body>
+
+<a href="../index.html">⬅ Retour</a>
+
+<h1>🥕 Galettes de légumes économiques</h1>
+
+<h2>Ingrédients</h2>
+<ul>
+  <li>2 carottes râpées</li>
+  <li>1 pomme de terre râpée</li>
+  <li>1 œuf</li>
+  <li>2 c. à soupe de farine</li>
+  <li>Sel, poivre, huile</li>
+</ul>
+
+<h2>Préparation</h2>
+<ul>
+  <li>Mélanger carottes + pomme de terre + œuf + farine.</li>
+  <li>Assaisonner.</li>
+  <li>Former des petites galettes.</li>
+  <li>Cuire à la poêle jusqu’à doré.</li>
+</ul>
+
+<p><strong>💡 Alternative économique aux accras.</strong></p>
+
+</body>
+</html>
