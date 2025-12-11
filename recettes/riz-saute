@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Riz sauté aux légumes et œufs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: Arial; padding:20px; }
+    a { text-decoration:none; font-size:18px; }
+  </style>
+</head>
+<body>
+
+<a href="../index.html">⬅ Retour</a>
+
+<h1>🍳 Riz sauté aux légumes et œufs</h1>
+
+<h2>Ingrédients</h2>
+<ul>
+  <li>Riz cuit (de la veille)</li>
+  <li>1 oignon</li>
+  <li>1 carotte ou autre légume</li>
+  <li>2 œufs</li>
+  <li>Sel, poivre, ail</li>
+</ul>
+
+<h2>Préparation</h2>
+<ul>
+  <li>Faire revenir oignon et légumes.</li>
+  <li>Ajouter le riz et mélanger.</li>
+  <li>Ajouter les œufs battus et remuer.</li>
+  <li>Assaisonner.</li>
+</ul>
+
+<p><strong>💡 Rapide, complet et parfait pour finir les restes.</strong></p>
+
+</body>
+</html>
